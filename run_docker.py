@@ -121,7 +121,7 @@ def main():
     cmd = [
         "docker", "run", "-d",
         "--name", "archon-container",
-        "-p", "8501:8501",
+        "-p", "8502:8501",
         "-p", "8100:8100",
         "--add-host", "host.docker.internal:host-gateway"
     ]
@@ -142,7 +142,7 @@ def main():
     
     # Print success message
     print("\n=== Archon is now running! ===")
-    print("-> Access the Streamlit UI at: http://localhost:8501")
+    print("-> Access the Streamlit UI at: http://localhost:8502")
     print("-> MCP container is ready to use - see the MCP tab in the UI.")
     print("\nTo stop Archon, run: docker stop archon-container && docker rm archon-container")
     
